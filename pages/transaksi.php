@@ -44,8 +44,11 @@ $query = mysqli_query($conn, "
         <h3>Data Transaksi Kas</h3>
 
         <?php if ($_SESSION['role'] == 'admin') { ?>
-            <a href="tambah_transaksi.php" class="btn btn-primary">Tambah Transaksi</a>
-        <?php } ?>
+    <div>
+        <a href="export_transaksi.php" class="btn btn-success me-2">Export CSV</a>
+        <a href="tambah_transaksi.php" class="btn btn-primary">Tambah Transaksi</a>
+    </div>
+<?php } ?>
     </div>
 
     <?php if (isset($_GET['success'])) { ?>

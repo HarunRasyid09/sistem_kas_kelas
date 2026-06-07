@@ -35,9 +35,11 @@ $query = mysqli_query($conn, "SELECT * FROM anggota ORDER BY id_anggota DESC");
         <h3>Data Anggota</h3>
 
         <?php if ($_SESSION['role'] == 'admin') { ?>
-            <a href="tambah_anggota.php" class="btn btn-primary">Tambah Anggota</a>
-        <?php } ?>
+    <div>
+        <a href="export_anggota.php" class="btn btn-success me-2">Export CSV</a>
+        <a href="tambah_anggota.php" class="btn btn-primary">Tambah Anggota</a>
     </div>
+<?php } ?>
 
     <?php if (isset($_GET['success'])) { ?>
         <div class="alert alert-success">

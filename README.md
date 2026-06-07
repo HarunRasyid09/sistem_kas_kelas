@@ -21,6 +21,7 @@ Project ini dibuat sebagai Final Project mata kuliah Pemrograman Web.
 * Dashboard ringkasan kas
 * CRUD data anggota
 * CRUD data transaksi kas
+* Export data anggota dan transaksi kas ke format CSV
 * Data pemasukan dan pengeluaran
 * Perhitungan saldo kas otomatis
 * Validasi input tidak boleh kosong
